@@ -37,8 +37,10 @@ while game_is_on:
 
     if ball.xcor() > 400:
         ball.reset()
+        score.l_point()
 
     if ball.xcor() < -400:
         ball.reset()
+        score.r_point()
 
 screen.exitonclick()
